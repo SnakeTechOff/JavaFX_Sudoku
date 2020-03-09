@@ -1,0 +1,72 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+AnchorPane {
+	/*-fx-background-color: #696969 ;*/
+}
+
+GridPane {
+	-fx-alignment: center;
+	-fx-grid-lines-visible: true;
+}
+
+#gp_menu {
+	-fx-alignment: center-left;
+	-fx-grid-lines-visible: true;
+}
+
+Label {
+	-fx-border-width: 0.0px;
+	-fx-text-fill:black ;
+}
+
+CheckBox {
+	-fx-text-fill:white ;
+}
+
+ListView {
+	-fx-control-inner-background:#000000; 
+}
+
+Text {
+	-fx-fill: white;
+}
+
+#initText {
+	-fx-font: 30px Arial;
+	-fx-fill: black;
+}
+
+#addText {
+	-fx-font: 30px Arial;
+	-fx-fill: deeppink;
+}
+
+RadioButton {
+	-fx-text-fill: white;
+}
+	
+TextArea {
+	-fx-control-inner-background:#000000; 
+	-fx-font-family: Consolas; 
+	-fx-highlight-fill: #00ff00; 
+	-fx-highlight-text-fill: #000000; 
+	-fx-text-fill: #00ff00;
+}
+ 
+
+.items {
+	-fx-control-inner-background:#000000; 
+	-fx-font-family: Consolas; 
+	-fx-text-fill: #00ff00;
+}
+ 
+.stage {
+  -fx-border-insets: 23;
+  -fx-background-insets: 23;
+  -fx-background-radius: 6;
+  -fx-border-radius: 6;
+  -fx-border-color: gray;
+  -fx-border-style: solid;
+  -fx-border-width: 1;
+  -fx-effect: dropshadow(three-pass-box, rgba(100, 100, 100, 1), 24, 0.5, 0, 0);
+}/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
