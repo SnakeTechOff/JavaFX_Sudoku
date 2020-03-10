@@ -25,7 +25,7 @@ public class AC3 {
 
 			if (removeInconsistentValues(grid, xi, xj)) {
 				if (csp.sudoku.domains.get(Integer.toString(xi[0])+Integer.toString(xi[1])).size() == csp.sudoku.empty){
-					return false;
+					return true;
 				} else {
 					for (Entry<int[], ArrayList<Integer>> xk: csp.sudoku.getNeighbors(grid, xi).entrySet()) {
 						if (xk.getKey() != xi) {
@@ -36,7 +36,7 @@ public class AC3 {
 			}
 			
 		}
-		return true;
+		return false;
 	}
 	
 	private Queue<Tuple<int[], int[]>> getArc(int[][] grid) {
@@ -53,12 +53,11 @@ public class AC3 {
 		boolean removed = false;
 		ArrayList<Integer> temp = csp.sudoku.cloneDomain(csp.sudoku.domains.get(Integer.toString(xi[0])+Integer.toString(xi[1])));
 		//System.out.println(temp);
-		for (int x: csp.sudoku.domains.get(Integer.toString(xi[0])+Integer.toString(xi[1]))) {
+		for (int x: temp) {
 			if (checkInconsistent(x, csp.sudoku.domains.get(Integer.toString(xj[0])+Integer.toString(xj[1])))) {
-				temp.remove(temp.indexOf(x));
+				csp.sudoku.domains.get(Integer.toString(xi[0])+Integer.toString(xi[1])).remove(csp.sudoku.domains.get(Integer.toString(xi[0])+Integer.toString(xi[1])).indexOf(x));
 				removed = true;
 			}
-			csp.sudoku.domains.put(Integer.toString(xi[0])+Integer.toString(xi[1]), temp);
 		}
 		return removed;
 	}
@@ -66,10 +65,10 @@ public class AC3 {
     private static boolean checkInconsistent(int i, ArrayList<Integer> domain){
         for(int j: domain){
             if(i != j){
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 	
 }

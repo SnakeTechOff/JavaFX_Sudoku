@@ -56,8 +56,7 @@ public abstract class CSP {
 					if (recursiveBacktracking(grid)) {
 						return true;
 					}
-				}
-				if (this.choice_ac3 && !ac3.algo(grid)) {		
+				} else if (this.choice_ac3 && ac3.algo(grid)) {		
 					if (recursiveBacktracking(grid)) {	
 						return true;
 					}
