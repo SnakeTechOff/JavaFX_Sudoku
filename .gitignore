@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 /bin/
+/build/
 =======
 # Compiled class file
 *.class
@@ -36,3 +37,9 @@ hs_err_pid*
 
 # HTML
 *.html
+
+# XML
+*.xml
+
+# UML
+*.ucls

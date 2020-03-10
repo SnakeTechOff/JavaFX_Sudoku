@@ -277,7 +277,7 @@ public class Window extends Application {
     }
     
     // Copy for print
-    public void sudokuCopy() {
+    private void sudokuCopy() {
 		for (int row = 0; row < sudoku.size; row++) {
 			for (int col = 0; col < sudoku.size; col++) {
 				this.sudokuCopy[row][col] = this.sudoku.grid[row][col];
@@ -286,7 +286,7 @@ public class Window extends Application {
     }
     
     // Clear grid
-    public void clearGrid() {
+    private void clearGrid() {
         for(int row = 0; row < 9; row++) {
             for(int col = 0; col < 9; col++) {
             	this.sudokuText[row][col].setText("");         	
@@ -319,7 +319,7 @@ public class Window extends Application {
     }
     
     // Initialize GridPane
-    public void initGrid() {
+    private void initGrid() {
     	for(int row = 0; row < 9; row++) {
             for(int col = 0; col < 9; col++) {
 		    	this.sudokuText[row][col] = new Text("");
@@ -371,10 +371,6 @@ public class Window extends Application {
 		}
     }
     
-    // For test
-    public void p() {
-    	System.out.println(this.cb_ac3.isAllowIndeterminate());
-    }
     
     @Override
     public void start(Stage stage) throws Exception {

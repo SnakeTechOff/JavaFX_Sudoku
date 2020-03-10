@@ -24,7 +24,7 @@ public abstract class CSP {
 		this.ac3 = new AC3(getInstance());
 	}
 	
-	public CSP getInstance() {
+	private CSP getInstance() {
 		return this;
 	}
 	
@@ -68,7 +68,7 @@ public abstract class CSP {
 	}
     
 	// Select unassigned variable 
-	public int[] select_unassigned_variable(int[][] grid) {
+	private int[] select_unassigned_variable(int[][] grid) {
 		if (this.choice_mrv == true && this.choice_dh == true) {
 			ArrayList<int[]> pos = mrv.algo(grid);
 			return dh.algo(grid, pos);
@@ -91,7 +91,7 @@ public abstract class CSP {
 	}
 	
 	// Puts the domain in order
-	public ArrayList<Integer> order_domain_values(int[][] grid, int[] var) {
+	private ArrayList<Integer> order_domain_values(int[][] grid, int[] var) {
 		int row = var[0];
 		int col = var[1];
 		if (this.choice_lcv == false) {

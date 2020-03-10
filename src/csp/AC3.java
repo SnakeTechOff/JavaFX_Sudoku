@@ -49,7 +49,7 @@ public class AC3 {
 		return arcs;
 	}
 	
-	public boolean removeInconsistentValues(int[][] grid, int[] xi, int[] xj) {
+	private boolean removeInconsistentValues(int[][] grid, int[] xi, int[] xj) {
 		boolean removed = false;
 		ArrayList<Integer> temp = csp.sudoku.cloneDomain(csp.sudoku.domains.get(Integer.toString(xi[0])+Integer.toString(xi[1])));
 		//System.out.println(temp);
