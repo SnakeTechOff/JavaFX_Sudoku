@@ -1,7 +1,7 @@
 # JavaFX_Sudoku
 Cours UQAC IA
 
-![alt text][presentation]
+![presentation](https://user-images.githubusercontent.com/34363390/76276218-ab144600-625b-11ea-8240-49bd94d4ea66.png)
 
 **Objective**
 
@@ -37,7 +37,7 @@ The value of each variable X<sub>i</sub> cannot be equal to any value in its:
 - Box
 
 
-![alt text][constraint] 
+![constraint](https://user-images.githubusercontent.com/34363390/76276200-9e8fed80-625b-11ea-8785-48f6b69d5f48.png)
 
 ## Algorithm
 
@@ -47,7 +47,7 @@ Searches for variables with the smallest domains
 
 In this example, the grayed cells are the mrv of the grid
 
-![alt text][mrv]
+![mrv](https://user-images.githubusercontent.com/34363390/76276187-946def00-625b-11ea-8548-1271831aebfd.png)
 
 ### Degree Heuristic (DH)
 
@@ -65,7 +65,7 @@ First, the AC-3 (arc-consistency checking) algorithm will be implemented. This a
 
 Using a file to add a grid to sudoku can be done with the Load file button. The file must respect the following path **src/file/sudoku.txt**, and must respect the architecture shown in the image below
 
-![alt text][file]
+![file](https://user-images.githubusercontent.com/34363390/76276159-81f3b580-625b-11ea-90b6-95f788ee9f4e.png)
 
 ## Further information
 
