@@ -162,7 +162,9 @@ public class Window extends Application {
         // GridPane
         this.gp_grid.setAlignment(Pos.CENTER);
         this.gp_cb.setHgap(10.00);
+        this.gp_cb.setId("grid");
         this.gp_bt.setHgap(10.00);
+        this.gp_bt.setId("grid");
         
         // StackPane
         this.sp_menu.setPadding(new Insets(20));

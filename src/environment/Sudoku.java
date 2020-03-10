@@ -28,7 +28,7 @@ public class Sudoku extends Thread {
 		this.row = this.size;
 		this.col = this.size;
 		this.empty = 0;
-		this.kill = 35;
+		this.kill = 30;
 		this.square = (int) Math.sqrt(this.size);
 		this.grid = new int[this.row][this.col];
 		this.domains = new HashMap<String, ArrayList<Integer>>();
@@ -42,7 +42,7 @@ public class Sudoku extends Thread {
 		this.row = this.size;
 		this.col = this.size;
 		this.empty = 0;
-		this.kill = 50;
+		this.kill = 30;
 		this.square = (int) Math.sqrt(this.size);
 		this.grid = new int[this.row][this.col];
 		this.domains = new HashMap<String, ArrayList<Integer>>();

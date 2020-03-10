@@ -9,9 +9,8 @@ GridPane {
 	-fx-grid-lines-visible: true;
 }
 
-#gp_menu {
-	-fx-alignment: center-left;
-	-fx-grid-lines-visible: true;
+#grid {
+	-fx-grid-lines-visible: false;
 }
 
 Label {
